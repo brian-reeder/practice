@@ -1,4 +1,11 @@
-﻿
+﻿/* // //
+// FileName: 02-Add_Two_Numbers-C#/Program.cs
+// FileType: Visual C# Source file
+// Author: https://github.com/brian-reeder
+// Created On: 10 JULY 2022 18:43:27 UTC
+// Description: This file is the Main function that operates the test
+//      cases and the Solution program for the problem.
+*/ // //
 namespace AddTwoNumbers {
     class Program {
         static void Main(string[] args) {

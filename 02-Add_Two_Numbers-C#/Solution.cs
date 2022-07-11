@@ -1,31 +1,57 @@
+/* // //
+// FileName: 02-Add_Two_Numbers-C#/Solution.cs
+// FileType: Visual C# Source file
+// Author: https://github.com/brian-reeder
+// Created On: 10 JULY 2022 18:45:40 UTC
+// Description: This file is the Solution class for the leetcode problem.
+//      It uses a stack 
+*/ // //
 public class Solution {
     public ListNode AddTwoNumbers(ListNode? l1, ListNode? l2) {
-        int r = 0;
+        int remainder = 0;
         int sum = 0;
-        Stack<int> l3stack = new Stack<int>();
+        ListNode? walk, head;
+
+        // Sum all available values.
+        // Iterate lists to next entry
+        if(l1 != null) {
+            sum += l1.val;
+            l1   = l1.next;
+        }
+        if(l2 != null){                
+            sum += l2.val;
+            l2   = l2.next;
+        }
+        // Calculate remainder
+        remainder = sum/10;
+
+        // Remove remainder from sum
+        // Initiliaze return ListNode
+        head = new ListNode(sum % 10);
+        walk = head;
 
         // If there are still items in l1 or l2 or if there's a remainder.
-        while(l1 != null || l2 != null || r != 0) {
+        while(l1 != null || l2 != null || remainder != 0) {
             
-            sum = (l1 != null ? l1.val:0) + (l2 != null ? l2.val : 0) + r;
-
+            // Sum all available values.
+            // Iterate lists to next entry
+            sum = remainder;
+            if(l1 != null) {
+                sum += l1.val;
+                l1   = l1.next;
+            }
+            if(l2 != null){                
+                sum += l2.val;
+                l2   = l2.next;
+            }
             // Calculate remainder
-            r = sum/10;
+            remainder = sum/10;
 
             // Strip any remainder and add it to the Stack
-            l3stack.Push(sum % 10);
-
-            // Iterate through l1 and l2 if they're not null
-            l1 = l1?.next;
-            l2 = l2?.next;
+            walk.next = new ListNode(sum % 10);
+            walk = walk.next;
         }
-
-        // Convert stack to ListNode
-        ListNode? l3 = null;
-        foreach(int i in l3stack!){
-            l3 = new ListNode(i, l3);
-        }
-
-        return l3!;
+        
+        return head;
     }
 }
