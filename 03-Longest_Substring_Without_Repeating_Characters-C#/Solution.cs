@@ -2,7 +2,7 @@
 // FileName: 03-Longest_Substring_Without_Repeating_Characters-C#/Solution.cs
 // FileType: Visual C# Source file
 // Author: https://github.com/brian-reeder
-// Created On: 10 JULY 2022 14:00:44 UTC
+// Created On: 11 JULY 2022 14:00:44 UTC
 // Description: This file is the Solution class for the leetcode problem.
 //      It uses a HashSet. 
 */ // //
