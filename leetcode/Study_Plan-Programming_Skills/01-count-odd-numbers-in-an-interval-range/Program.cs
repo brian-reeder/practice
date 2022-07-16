@@ -6,7 +6,7 @@ FileType:
 Author:
     https://github.com/brian-reeder
 Created On:
-    Saturday, July 16, 2022, 17:43:03 PM
+    Saturday, July 16, 2022, 17:43:03
 
 Description:
     Given two non-negative integers low and high. Return the count of
