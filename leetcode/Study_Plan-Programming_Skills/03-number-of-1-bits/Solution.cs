@@ -1,6 +1,6 @@
 /*
 File Name: 
-    02-average-salary-excluding-the-minimum-and-maximum-salary/Solution.cs
+    03-number-of-1-bits/Solution.cs
 FileType: 
     Visual C# Source file
 Author:
