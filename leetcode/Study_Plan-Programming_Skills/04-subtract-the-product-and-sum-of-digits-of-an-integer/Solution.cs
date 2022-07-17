@@ -1,12 +1,12 @@
 /*
 File Name: 
-    02-average-salary-excluding-the-minimum-and-maximum-salary/Solution.cs
+    04-subtract-the-product-and-sum-of-digits-of-an-integer/Solution.cs
 FileType: 
     Visual C# Source file
 Author:
     https://github.com/brian-reeder
 Created On:
-    Saturday, July 16, 2022, 18:50:00
+    Sunday, July 17, 2022, 15:15:58
 
 Description:
     Write a function that takes an unsigned integer and returns the number of 
