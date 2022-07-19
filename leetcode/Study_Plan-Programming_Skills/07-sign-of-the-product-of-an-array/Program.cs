@@ -1,6 +1,6 @@
 ﻿/*
 File Name: 
-    06-find-nearest-point-that-has-the-same-x-or-y-coordinate/Program.cs
+    07-sign-of-the-product-of-an-array/Program.cs
 FileType: 
     Visual C# Source file
 Author:
