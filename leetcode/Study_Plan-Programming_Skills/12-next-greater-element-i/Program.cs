@@ -1,6 +1,6 @@
 ﻿/*
 File Name: 
-    11-n-ary-tree-preorder-traversal/Program.cs
+    12-next-greater-element-i/Program.cs
 FileType: 
     Visual C# Source file
 Author:
