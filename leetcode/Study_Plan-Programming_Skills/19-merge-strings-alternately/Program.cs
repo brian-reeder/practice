@@ -6,7 +6,7 @@ FileType:
 Author:
     https://github.com/brian-reeder
 Created On:
-    July 23, 2022, 8:35:51
+    July 23, 2022, 13:35:51
 
 Description:
     You are given two strings word1 and word2. Merge the strings by adding 
