@@ -29,7 +29,7 @@ namespace FindTheDifference {
             var solve = new Sorter.Solution();
             foreach((string, string, char) t in testcases) {
                 Console.WriteLine($"Input: s = \"{t.Item1}\", s = \"{t.Item2}\"");
-                var x = solve.FindDifference(t.Item1, t.Item2);
+                var x = solve.FindTheDifference(t.Item1, t.Item2);
                 Console.WriteLine($"Output: \"{x}\"");
 
                 // Check output against the test

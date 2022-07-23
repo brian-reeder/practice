@@ -18,7 +18,7 @@ Description:
     Given the string command, return the Goal Parser's interpretation of command.
 */
 public class Solution {
-    public string GoalParser(string command) {
+    public string Interpret(string command) {
         var newCommand = new List<char>();
         bool open;
         for(int i = 0; i < command.Length; i++) {

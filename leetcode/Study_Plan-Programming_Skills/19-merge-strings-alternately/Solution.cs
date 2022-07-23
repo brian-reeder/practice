@@ -17,7 +17,7 @@ Description:
     Return the merged string.
 */
 public class Solution {
-    public string MergeString(string word1, string word2) {
+    public string MergeAlternately(string word1, string word2) {
         var newString = new char[word1.Length + word2.Length];
         var i1 = 0;
         var i2 = 0;

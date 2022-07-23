@@ -18,7 +18,7 @@ Description:
 */
 namespace Dictionaries {
     public class Solution {
-        public char FindDifference(string s, string t) {
+        public char FindTheDifference(string s, string t) {
 
             // Initialize lookup tables
             var sHash = new Dictionary<char, int>((Int32)'z' - (Int32)'a');
@@ -47,7 +47,7 @@ namespace Dictionaries {
 
 namespace Sorter {
     public class Solution{
-        public char FindDifference(string s, string t) {
+        public char FindTheDifference(string s, string t) {
             var sSorted = s.ToArray();
             Array.Sort(sSorted);
 

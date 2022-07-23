@@ -32,7 +32,7 @@ namespace MergeStringsAlternatively {
             var solve = new Solution();
             foreach((string, string, string) t in testcases) {
                 Console.WriteLine($"Input: word1 = \"{t.Item1}\", word2 = \"{t.Item2}\" ");
-                var x = solve.MergeString(t.Item1, t.Item2);
+                var x = solve.MergeAlternately(t.Item1, t.Item2);
                 Console.WriteLine($"Output: \"{x}\"");
 
                 // Check output against the test

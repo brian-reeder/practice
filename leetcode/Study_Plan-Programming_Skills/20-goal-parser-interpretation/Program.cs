@@ -31,7 +31,7 @@ namespace GoalParserInterpretation {
             var solve = new Solution();
             foreach((string, string) t in testcases) {
                 Console.WriteLine($"Input: command = \"{t.Item1}\"");
-                var x = solve.GoalParser(t.Item1);
+                var x = solve.Interpret(t.Item1);
                 Console.WriteLine($"Output: \"{x}\"");
 
                 // Check output against the test
