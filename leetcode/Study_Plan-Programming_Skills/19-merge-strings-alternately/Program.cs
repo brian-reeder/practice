@@ -16,7 +16,7 @@ Description:
 
     Return the merged string.
 */
-namespace ReshapeTheMatrix {
+namespace MergeStringsAlternatively {
     public class Program {
         public static void Main(string[] args) {
             // Load test cases

@@ -17,7 +17,7 @@ Description:
 
     Given the string command, return the Goal Parser's interpretation of command.
 */
-namespace ReshapeTheMatrix {
+namespace GoalParserInterpretation {
     public class Program {
         public static void Main(string[] args) {
             // Load test cases
