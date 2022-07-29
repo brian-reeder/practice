@@ -1,6 +1,6 @@
 /*
 File Name: 
-    38-repeated-substring-pattern/Program.cs
+    38-repeated-substring-pattern/Solution.cs
 FileType: 
     Visual C# Source file
 Author:
