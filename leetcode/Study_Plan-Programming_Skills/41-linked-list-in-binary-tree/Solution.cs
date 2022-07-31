@@ -39,11 +39,13 @@ public class Solution {
     
     static bool CheckPath(ListNode head, TreeNode root) {
         if(head == null) return true;
-        if(root == null) return false;
-        
-        if(head.val == root.val)
-            if(CheckPath(head.next, root.left) || CheckPath(head.next, root.right))
-                return true;
+        if(root == null || root.val != head.val) return false;
+
+        if(CheckPath(head.next, root.left))
+            return true;
+            
+        if(CheckPath(head.next, root.right))
+            return true;
         
         return false;
     }
