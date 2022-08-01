@@ -6,7 +6,7 @@ FileType:
 Author:
     https://github.com/brian-reeder
 Created On:
-    August 1, 2022, 11:41:09
+    August 1, 2022, 16:41:09
 
 Description:
     Given two binary strings a and b, return their sum as a binary string.
