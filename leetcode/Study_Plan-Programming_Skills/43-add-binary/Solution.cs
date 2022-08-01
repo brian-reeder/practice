@@ -35,15 +35,7 @@ public class Solution {
             else if (cIndex < start && cBuff[cIndex] != 0)
                 start = cIndex;
         }
-        cBuff[0] += '0';
-/*
-        int start = cBuff.Length-1;
-        for(int i = start; i >= 0; i--) {
-            cBuff[i] += '0';
-            if(cBuff[i] != '0')
-                start = i;
-        }
-*/        
+        cBuff[0] += '0';        
         return new string(cBuff[start..]);
     }
 }
