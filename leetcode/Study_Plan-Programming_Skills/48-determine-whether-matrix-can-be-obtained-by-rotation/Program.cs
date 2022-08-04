@@ -1,6 +1,6 @@
 ﻿/*
 File Name: 
-    48-determine-whether-matrix-can-be-obtained-by-rotation/Solution.cs
+    48-determine-whether-matrix-can-be-obtained-by-rotation/Program.cs
 FileType: 
     Visual C# Source file
 Author:
