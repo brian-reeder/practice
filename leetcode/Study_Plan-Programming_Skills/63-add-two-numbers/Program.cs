@@ -37,7 +37,7 @@ namespace AddTwoNumbers {
                  new int[] {8, 9, 9, 9, 0, 0, 0, 1})
             };
 
-            var solve = new Stack.Solution();
+            var solve = new Iterate.Solution();
             foreach(var test in testcases) {
                 ListNode? l1 = null;
                 for(int i = test.Item1.Length-1; i >= 0; i--)

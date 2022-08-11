@@ -72,3 +72,30 @@ namespace Stack {
         }
     }
 }
+
+namespace Iterate {
+    public class Solution {
+        public ListNode AddTwoNumbers(ListNode l1, ListNode l2) {
+            var headHandle = new ListNode();
+            var walk = headHandle;
+            int carry, sum;
+            for(carry = 0; carry != 0 || l1 != null || l2 !=  null; carry = sum / 10) {
+                sum = carry;
+                if(l1 != null) {
+                    sum += l1.val;
+                    l1 = l1.next;
+                }
+
+                if(l2 != null) {
+                    sum += l2.val;
+                    l2 = l2.next;
+                }
+
+                walk.next = new ListNode(sum%10);
+                walk = walk.next;
+            }
+
+            return headHandle.next;
+        }
+    }
+}
