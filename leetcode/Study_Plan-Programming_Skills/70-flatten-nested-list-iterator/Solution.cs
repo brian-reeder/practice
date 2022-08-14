@@ -24,3 +24,31 @@ Constraints:
     * 1 <= nestedList.length <= 500
     * The values of the integers in the nested list is in the range [-10^6, 10^6].
 */
+public class NestedIterator {
+    Stack<NestedInteger> _stack;
+    public NestedIterator(IList<NestedInteger> nestedList) {
+        // Convert nestedList to Stack.
+        _stack = new Stack<NestedInteger>();
+        foreach(var elem in nestedList.Reverse())
+            _stack.Push(elem);
+    }
+
+    public bool HasNext() {
+        while(_stack.Count != 0 && !_stack.Peek().IsInteger()) {
+            // Convert top List to Stack.
+            var list = _stack.Pop().GetList();
+            foreach(var elem in list.Reverse())
+                _stack.Push(elem);
+        }
+        
+        // NestedIntegers and empty lists have been consumed.
+        if(_stack.Count == 0)
+            return false;
+        
+        return true;
+    }
+
+    public int Next() {
+        return _stack.Pop().GetInteger();
+    }
+}
